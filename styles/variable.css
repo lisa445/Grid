@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    /*Color*/
+    --black: #2D3436;
+    --soft_gray:#C2C2C2;
+    --gray_light: #ADADAD;
+    --dark_yellow: #FDCB6E;
+    --light_yellow:#FFEAA7;
+    --light_green: #55EFC4;
+    --dark_green: #00B894;
+    --dark_blue:#0984E3;
+    --light_blue: #74B9FF;
+    --dark_purple: #6C5CE7;
+    --light_purple:#998bff;
+    --dark_pink:#E84393;
+    --red_light: #FF7675; 
+    --red-dark: #D63031;
+
+    /*Fonts*/
+    --font-family-B: 'InterBold', sans-serif;
+    --font-family-L: 'InterLight', sans-serif;
+    --font-family-M: 'InterMedium', sans-serif;
+    --font-family-R: 'InterRegular', sans-serif;
+    --font-family-T: 'InterThin', sans-serif;
+    
+
+    /*Animation*/
+    --animation_speed: .3s;
+    --animation_fync: ease;
+    --animation_ease: var(--animation_speed) var(--animation_fync);
+}

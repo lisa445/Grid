@@ -1,0 +1,40 @@
+.primary_button, .primary_button_radius, .secondary_button{
+    font-family: var(--font-family-B);
+    font-size: 24px;
+    border-radius: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+.primary_button, .primary_button_radius{
+    color: white;
+    background: var(--dark_purple);
+    border: none;
+    transition: background-color var(--animation_ease);
+}
+
+.primary_button{
+    
+}
+
+.primary_button_radius{
+    border-radius: 999px;
+}
+
+.secondary_button{
+    border: 1px solid var(--gray_light);
+    color: var(--dark_purple);
+    background-color: transparent;
+    transition: color var(--animation_ease);
+}
+
+
+.primary_button:focus, .primary_button:hover,
+.primary_button_radius:hover,.primary_button_radius:focus{
+    background: var(--light_purple);
+}
+
+.secondary_button:focus, .secondary_button:hover{
+    color:var(--light_purple);
+}
