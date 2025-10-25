@@ -38,3 +38,11 @@
 .secondary_button:focus, .secondary_button:hover{
     color:var(--light_purple);
 }
+
+
+.header_button{
+    /*
+    width:170px;
+    height: 64px;*/
+    padding: 14px 44px; 
+}
