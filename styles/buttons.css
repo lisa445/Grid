@@ -14,10 +14,6 @@
     transition: background-color var(--animation_ease);
 }
 
-.primary_button{
-    
-}
-
 .primary_button_radius{
     border-radius: 999px;
 }

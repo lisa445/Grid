@@ -1,0 +1,75 @@
+.advantage_b{
+    font-size: 18px;
+    height: 48px;
+    width: 146px;
+}
+
+.about_us{
+    padding: 80px 130px;
+}
+
+.about_title, .advantage_title, .about_description, .about_subtitle{
+    color: var(--black);
+}
+
+.about_title, .advantage_title{
+    font-weight: 700;
+    font-family: var(--font-family-B);
+}
+
+.about_subtitle, .about_description{
+    font-family: var(--font-family-R);
+    font-weight: 400;
+}
+
+.about_title{
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+.advantage_title{
+    font-size: 24px;
+}
+
+.about_subtitle{
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.about_description{
+   font-size:18px;
+   margin: 16px 0;
+   line-height: 32px;
+}
+
+.advantages{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+}
+
+
+img[class^="about_img"]{
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    margin-bottom: 24px;
+}
+
+.advantage{
+    width: 270px;
+}
+
+.about_img1{
+    background: var(--dark_pink);
+}
+
+.about_img2{
+    background: var(--dark_blue);
+}
+.about_img3{
+    background: var(--dark_purple);
+}
+.about_img4{
+    background: var(--dark_green);
+}
