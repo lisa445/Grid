@@ -77,21 +77,42 @@
     font-weight: 900;
 }
 
-.price_adv ul li{
+.price_adv_list li{
     font-weight: 400px;
     font-family: var(--font-family-R);
     list-style-type:none;
     margin-bottom: 16px;
+    display: flex;
 }
+
 .price_adv ul li:last-child{
     margin-bottom: 0;
 }
 
-.price_adv ul{
+.price_adv_list li::before{
+    content: '';
+    display: block;
+    background: var(--dark_yellow) url('../media_files/icons/icon-check.svg') no-repeat center;
+    height: 32px;
+    width: 32px;
+    border-radius: 999px;
+    margin-right: 16px;
+}
+
+
+.price_card:nth-child(1) li:before{
+    background-color: var(--soft_gray);
+}
+
+ .price_card:nth-child(3) li:before{
+    background-color: var(--light_green);
+}
+
+.price_adv_list{
     margin-top: 24px;
 }
 
-.sub_price, .price_adv ul li{
+.sub_price, .price_adv_list li{
     font-size: 18px;
 }
 
@@ -109,6 +130,7 @@
     align-items: center;
 }
 .price_card{
+    background: white;
     border-radius: 16px;
     padding: 32px;
     margin-right:30px;
@@ -116,12 +138,32 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: box-shadow .3s ease;
+    position: relative;
 }
 
 .price_card:last-child{
     margin-right:0;
 }
 
-.price_card:nth-child(2){
+
+.price_card::after{
+    content:'';
+    display: block;
+    width: 200px;
+    height: 130px;
+    background: url('../media_files/background/🎨\ Wiggle.svg') no-repeat center;
+    z-index: -1;
+    position: absolute;
+    bottom: -30px;
+    left: -30px;
+    opacity:0;
+    transition: opacity .3s ease;
+}
+
+.price_card:hover{
     box-shadow: 0px 16px 24px rgb(0,0,0, 0.25);
+}
+.price_card:hover::after{
+    opacity:1;
 }
