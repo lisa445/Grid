@@ -1,0 +1,127 @@
+.price{
+    padding: 70px 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.price_title, .cardprice, .price_adv ul li, .pricecard_title div{
+    color: var(--black);
+}
+.price_title{
+    margin-bottom: 34px;
+    text-align: center;
+}
+
+.price_subtitle{
+    margin-bottom: 40px;
+    text-align: center;
+}
+.price_subtitle, .price_title, .cardprice, .pricecard_title{
+    font-family: var(--font-family-B);
+}
+
+.pricecard_title, .cardprice, .price_subtitle{
+    font-weight: 700;
+}
+.cardprice, .pricecard_title div{
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.pricecard_title div{
+    border: 1px solid var(--dark_purple);
+    border-radius: 99px;
+    padding: 8px 21px;
+    margin-left: 105px;
+}
+.cardprice, .pricecard_title div{
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    
+}
+
+.pricecard_title{
+    margin-bottom: 16px;
+}
+.cardprice span{
+    font-size: 48px;
+}
+.price_subtitle{
+    color: var( --gray_light);
+    font-size: 32px;
+}
+
+.price_subtitle span, .pricecard_title{
+    color: var(--dark_purple);
+}
+.price_subtitle span{
+    position: relative;
+}
+.price_subtitle span::after{
+    position: absolute;
+    content:'';
+    display: block;
+    bottom:1px;
+    left: 0;
+    width: 126px;
+    height: 12px;
+    border-radius:999px;
+    z-index: -1;
+    background: var(--dark_yellow);
+}
+
+
+.price_title{
+    font-size: 64px;
+    font-weight: 900;
+}
+
+.price_adv ul li{
+    font-weight: 400px;
+    font-family: var(--font-family-R);
+    list-style-type:none;
+    margin-bottom: 16px;
+}
+.price_adv ul li:last-child{
+    margin-bottom: 0;
+}
+
+.price_adv ul{
+    margin-top: 24px;
+}
+
+.sub_price, .price_adv ul li{
+    font-size: 18px;
+}
+
+.sub_price, .main_price{
+    height: 64px;
+    width: 306px;
+}
+
+.price_cards{
+    display: flex;
+    justify-content: center;
+}
+.pricecard_title{
+    display: flex;
+    align-items: center;
+}
+.price_card{
+    border-radius: 16px;
+    padding: 32px;
+    margin-right:30px;
+    height: 530px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.price_card:last-child{
+    margin-right:0;
+}
+
+.price_card:nth-child(2){
+    box-shadow: 0px 16px 24px rgb(0,0,0, 0.25);
+}
