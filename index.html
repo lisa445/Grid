@@ -179,18 +179,24 @@ gaps between your layouts, templates and developers to empower all involved.</p>
                 </div>
             </div>
         </div>
-        <div class="forms">
+        <div class="form_info">
             <div class="mail_info">
                 <p class="footer_subtitle">follow us</p>
                 <a href="#">hello@fapsterapp.com</a>
             </div>
-            <form action="">
-                <p class="footer_subtitle">keep in touch</p>
-                <input type="text" placeholder="Your name">
-                <input type="email" placeholder="Email">
-                <textarea name="message" id=""></textarea>
-                <button>Send</button>
+            <div class="footer_forms">
+            <p class="footer_subtitle">keep in touch</p>
+            <form class="footer_feedback_form">
+                <div>
+                    <input type="text" placeholder="Your name" required title="Введите ваше имя">
+                    <input type="email" placeholder="Email" required title="Введите ваш Email">
+                </div>
+                <div>
+                    <textarea name="message" id="" placeholder="Leave your message" title="Расскажите ваши впечатления о сайте" ></textarea>
+                    <button type="button" class="primary_button footer_button">Send</button>
+                </div> 
             </form>
+            </div>
         </div>
     </footer>
     <script></script>

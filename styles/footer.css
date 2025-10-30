@@ -7,12 +7,16 @@
 .footer, .information_links div, .links, .information_links, .links div {
     display: flex;
 }
+.footer{
+    justify-content: space-between;
+    
+}
 
 /*Social media*/
 .social_media{
     margin-bottom:45px;
 }
-.social_media p{
+.social_media p, .mail_info p{
     margin-bottom:12px;
 }
 .social_media_links a img{
@@ -23,7 +27,7 @@
     transition: background-color .3s ease;
     margin-right: 37px;
 }
-.social_media_links a{
+.social_media_links a, .mail_info a{
     
     cursor: pointer;
     text-decoration: none;
@@ -39,9 +43,7 @@
 
 /*Information*/
 
-.links{
-    margin-top: 30px;
-}
+
 .links div, .information_links{
     flex-direction: column;  
 }
@@ -76,9 +78,11 @@
 
 .footer_subtitle{
     text-transform: uppercase;
-    color: var(--soft_gray);
+    color: var(--gray_light);
     font-size: 12px;
     letter-spacing: 2.5px;
+    margin-bottom: 16px;
+    
 }
 .links div a:hover, .links div a:focus{
     border-bottom: 1px solid var(--black);
@@ -88,4 +92,84 @@
     color: var(--dark_purple);
     font-weight: 700;
     font-size: 32px;
+    transition: color .3s ease;
+}
+.mail_info a:hover, .mail_info a:focus{
+    color: var(--light_purple);
+}
+
+/*form*/
+
+.footer_forms{
+    margin-top: 48px;
+}
+form input{
+    color: var(--dark_purple);
+    background-color: rgba(194, 194, 194, 0.4);
+    padding: 8px 16px;
+    border-radius: 16px;
+    border: 2px solid transparent;
+    height: 48px;
+    width: 270px;
+    font-size: 18px;
+    font-weight:400;
+    font-family: var(--font-family-R);
+    transition: border .3s ease;
+}
+
+form textarea{
+    background-color: rgba(194, 194, 194, 0.4);
+    resize: none;
+    padding: 16px;
+    height:80px;
+    width: 370px;
+    border-radius: 16px;
+    border: 2px solid transparent;
+    font-size: 18px;
+    font-weight:400;
+    font-family: var(--font-family-R);
+    color: var(--dark_purple);
+    transition: border var(--animation_ease);
+}
+
+form textarea::placeholder{
+    color: var(--dark_purple);
+    font-size: 18px;
+    font-family: var(--font-family-B);
+    font-weight: 700;
+}
+
+form input::placeholder{
+    color: var(--black);
+    font-size: 18px;
+    font-weight:400;
+    font-family: var(--font-family-R);
+    
+}
+
+.footer_button{
+    text-transform: uppercase;
+    height:80px;
+    width:170px;
+}
+
+.footer_button:hover, .footer_button:focus{
+    box-shadow: 0px 16px 32px 0px rgba(38, 50, 56, 0.08), 0px 8px 24px 0px rgba(38, 50, 56, 0.1);
+}
+
+form textarea:hover,form input:hover, 
+form textarea:focus,form input:focus{
+    border: 2px solid var(--dark_purple);
+}
+
+.footer_feedback_form div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer_feedback_form div:first-child{
+    margin-bottom: 30px;
+}
+input[type="text"], textarea{
+    margin-right: 30px;
 }
